@@ -44,14 +44,14 @@ telescope.setup {
 telescope.load_extension("file_browser")
 
 local opts = { noremap = true, silent = true }
-vim.keymap.set('n', ';c', '<cmd>lua require("telescope.builtin").find_files({ no_ignore = false, hidden = true })<cr>', opts)
-vim.keymap.set('n', ';r', '<cmd>lua require("telescope.builtin").live_grep()<cr>', opts)
-vim.keymap.set('n', ';b', '<cmd>lua require("telescope.builtin").buffers()<cr>', opts)
-vim.keymap.set('n', ';t', '<cmd>lua require("telescope.builtin").help_tags()<cr>', opts)
-vim.keymap.set('n', ';;', '<cmd>lua require("telescope.builtin").resume()<cr>', opts)
-vim.keymap.set('n', ';e', '<cmd>lua require("telescope.builtin").diagnostics()<cr>', opts)
-vim.keymap.set('n', ';f', '<cmd>lua require("telescope.builtin").find_files( { cwd = vim.fn.expand("%:p:h") })<cr>', opts)
-vim.keymap.set("n", ";sf", function()
+vim.keymap.set('n', '<Leader>c', '<cmd>lua require("telescope.builtin").find_files({ no_ignore = false, hidden = true })<cr>', opts)
+vim.keymap.set('n', '<Leader>r', '<cmd>lua require("telescope.builtin").live_grep()<cr>', opts)
+vim.keymap.set('n', '<Leader>b', '<cmd>lua require("telescope.builtin").buffers()<cr>', opts)
+vim.keymap.set('n', '<Leader>t', '<cmd>lua require("telescope.builtin").help_tags()<cr>', opts)
+vim.keymap.set('n', '<Leader>;', '<cmd>lua require("telescope.builtin").resume()<cr>', opts)
+vim.keymap.set('n', '<Leader>e', '<cmd>lua require("telescope.builtin").diagnostics()<cr>', opts)
+vim.keymap.set('n', '<Leader>f', '<cmd>lua require("telescope.builtin").find_files( { cwd = vim.fn.expand("%:p:h") })<cr>', opts)
+vim.keymap.set("n", "<Leader>sf", function()
   telescope.extensions.file_browser.file_browser({
     path = "%:p:h",
     cwd = telescope_buffer_dir(),

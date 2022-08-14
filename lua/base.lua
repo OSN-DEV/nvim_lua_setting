@@ -6,12 +6,13 @@ vim.g.mapleader = " "
 -- vim.opt.encoding = 'uft-8'
 vim.scriptencoding = 'utf-8'
 vim.opt.fileencoding = 'uft-8'
-vim.opt.ambiwidth = 'double'
+-- vim.opt.ambiwidth = 'double'
 
 -- vim.wo : window-scope
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.wo.wrap = false
+vim.opt.guifont = { 'HackGenNerd Console', ":h12" }
 
 vim.opt.title = true
 vim.opt.mouse = 'a'
@@ -22,7 +23,7 @@ vim.opt.showcmd = true -- 右下にまだ実行していないコマンドを表
 vim.opt.cmdheight = 1
 vim.opt.laststatus = 2 -- 常にステータスラインを表示
 vim.opt.expandtab = true
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 3
 -- vim.opt.shell = 'cmd.exe'
 vim.opt.shell = 'E:\\Apps\\Develop\\Nushell\\nushell\\nu.exe'
 vim.opt.backupskip = '/tmp/*,/private/tmp/*'
