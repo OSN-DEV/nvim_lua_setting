@@ -23,9 +23,9 @@ vim.opt.showcmd = true -- 右下にまだ実行していないコマンドを表
 vim.opt.cmdheight = 1
 vim.opt.laststatus = 2 -- 常にステータスラインを表示
 vim.opt.expandtab = true
-vim.opt.scrolloff = 3
+vim.opt.scrolloff = 2
 -- vim.opt.shell = 'cmd.exe'
-vim.opt.shell = 'E:\\Apps\\Develop\\Nushell\\nushell\\nu.exe'
+-- vim.opt.shell = 'E:\\Apps\\Develop\\Nushell\\nushell\\nu.exe'
 vim.opt.backupskip = '/tmp/*,/private/tmp/*'
 vim.opt.inccommand = 'split' -- 文字列置換をインタラクティブに表示する
 vim.opt.ignorecase = true
@@ -38,6 +38,9 @@ vim.opt.si = true -- Smart indet
 vim.opt.backspace = 'start,eol,indent' -- 挿入モードでのバックスペース
 vim.opt.path:append { '**' } -- Finding files - Search down into subfolders
 vim.opt.wildignore:append { '*/node_modules/*' }
+
+vim.opt.listchars = { space = '･', tab = '»-', trail = '-', eol = '↲', extends = '»', precedes = '«', nbsp = '%' }
+vim.opt.list = true
 
 -- Turn off paste mode when leaving insert
 vim.api.nvim_create_autocmd("InsertLeave", {

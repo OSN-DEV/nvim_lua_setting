@@ -36,6 +36,8 @@ keymap.set('n', '<C-w><down>', '<C-w>-')
 keymap.set('n', '<Leader>o', 'o<ESC>')
 keymap.set('n', '<Leader>O', 'O<ESC>')
 keymap.set('n', '<Leader>d', 'S<ESC>')
+keymap.set('', '<Leader>d', 'S<ESC>')
+keymap.set('n', '<ESC><ESC>', ':noh<CR>', {silent = true})
 
 -- 
 local toggleNum = function() 

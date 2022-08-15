@@ -15,7 +15,12 @@ telescope.setup {
   defaults = {
     mappings = {
       n = {
-        ['q'] = actions.close
+        ['q'] = actions.close,
+        ['<c-d>'] = require('telescope.actions').delete_buffer
+      },
+      i= {
+        ["<C-h>"] = "which_key",
+        ['<c-d>'] = require('telescope.actions').delete_buffer
       }
     }
   },
