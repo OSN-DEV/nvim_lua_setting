@@ -13,13 +13,15 @@ keymap.set('n', '-', '<C-x>')
 keymap.set('n', 'dw', 'vb"_d')
 
 -- Select All
-keymap.set('n', '<C-a>','gg<S-v>G')
+keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- New tab
-keymap.set('n', 'te', ':tabedit<Return>', {silent = true})
+keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
+keymap.set('n', '<C-p>', 'gt', { silent = true })
+keymap.set('n', '<C-o>', 'gT', { silent = true })
 -- Split window
-keymap.set('n', '<Leader>ss', ':split<Return><C-w>w', {silent = true})
-keymap.set('n', '<Leader>sv', ':vsplit<Return><C-w>w', {silent = true})
+keymap.set('n', '<Leader>ss', ':split<Return><C-w>w', { silent = true })
+keymap.set('n', '<Leader>sv', ':vsplit<Return><C-w>w', { silent = true })
 -- Move window
 keymap.set('n', ',', '<C-w>w')
 keymap.set('', '<S-left>', '<C-w>h')
@@ -37,15 +39,15 @@ keymap.set('n', '<Leader>o', 'o<ESC>')
 keymap.set('n', '<Leader>O', 'O<ESC>')
 keymap.set('n', '<Leader>d', 'S<ESC>')
 keymap.set('', '<Leader>d', 'S<ESC>')
-keymap.set('n', '<ESC><ESC>', ':noh<CR>', {silent = true})
+keymap.set('n', '<ESC><ESC>', ':noh<CR>', { silent = true })
 
--- 
-local toggleNum = function() 
-   vim.wo.relativenumber = not(vim.wo.relativenumber)
+--
+local toggleNum = function()
+  vim.wo.relativenumber = not (vim.wo.relativenumber)
 end
 keymap.set('n', '<A-n>', toggleNum)
 
 local toggleWrap = function()
-    vim.wo.wrap = not(vim.wo.wrap)
+  vim.wo.wrap = not (vim.wo.wrap)
 end
 keymap.set('n', '<A-z>', toggleWrap)
