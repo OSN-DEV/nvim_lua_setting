@@ -41,6 +41,8 @@ keymap.set('n', '<Leader>d', 'S<ESC>')
 keymap.set('', '<Leader>d', 'S<ESC>')
 keymap.set('n', '<ESC><ESC>', ':noh<CR>', { silent = true })
 
+keymap.set('n', '""', '"_')
+
 --
 local toggleNum = function()
   vim.wo.relativenumber = not (vim.wo.relativenumber)
