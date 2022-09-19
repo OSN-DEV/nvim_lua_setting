@@ -23,7 +23,6 @@ keymap.set('n', '<C-o>', 'gT', { silent = true })
 keymap.set('n', '<Leader>ss', ':split<Return><C-w>w', { silent = true })
 keymap.set('n', '<Leader>sv', ':vsplit<Return><C-w>w', { silent = true })
 -- Move window
-keymap.set('n', ',', '<C-w>w')
 keymap.set('', '<S-left>', '<C-w>h')
 keymap.set('', '<S-down>', '<C-w>j')
 keymap.set('', '<S-up>', '<C-w>k')
