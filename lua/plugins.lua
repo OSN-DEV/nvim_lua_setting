@@ -24,15 +24,15 @@ packer.startup(function(use)
   use 'hrsh7th/nvim-cmp' -- Completion
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
-  }
+  -- use {
+  --   'nvim-treesitter/nvim-treesitter',
+  --   run = ':TSUpdate'
+  -- }
   use 'jose-elias-alvarez/null-ls.nvim' --Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
 
   use 'windwp/nvim-autopairs'
-  use 'windwp/nvim-ts-autotag'
+  -- use 'windwp/nvim-ts-autotag'
 
   use 'nvim-lua/plenary.nvim' -- Common utilites
   use 'nvim-telescope/telescope.nvim'
